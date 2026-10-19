@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TJILI VIP</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+  text-align: center;
+}
+header {
+  background: #172554;
+  padding: 22px;
+  font-size: 28px;
+  font-weight: bold;
+  color: gold;
+}
+.card {
+  background: #1e293b;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+}
+button {
+  padding: 14px 24px;
+  background: gold;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 17px;
+}
+#score {
+  font-size: 35px;
+  color: #4ade80;
+}
+</style>
+</head>
+<body>
+
+<header>👑 TJILI VIP 👑</header>
+
+<div class="card">
+  <h2>Welcome to TJILI VIP</h2>
+  <p>Your Free Online Game</p>
+  <p>તમારા પોઇન્ટ્સ</p>
+  <div id="score">0</div>
+  <br>
+  <button onclick="addPoints()">🎮 PLAY NOW</button>
+  <p id="message">રમવા માટે બટન દબાવો!</p>
+</div>
+
+<script>
+let score = 0;
+
+function addPoints() {
+  score += 10;
+  document.getElementById("score").innerText = score;
+  document.getElementById("message").innerText =
+    "શાબાશ! તમને 10 પોઇન્ટ મળ્યા.";
+}
+</script>
+
+</body>
+</html>
